@@ -31,7 +31,7 @@ namespace SafeRemover
             if (removableDrives.Count == 0)
             {
                 Console.WriteLine("Не подключено ни одного флеш-диска.");
-                return;
+                //return;
             }
             else if (removableDrives.Count == 1)
             {
@@ -66,6 +66,8 @@ namespace SafeRemover
                     Console.WriteLine("Некорректный выбор.");
                 }
             }
+
+            Console.ReadKey();
         }
     }
 
